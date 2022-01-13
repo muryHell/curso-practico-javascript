@@ -2,6 +2,10 @@ console.group("Cuadrado");
 const ladoCuadrado = 5;
 console.log("Lados del cuadrado miden " + ladoCuadrado);
 
+function perimetroCuadrado(lado) {
+  return lado *4;
+}
+
 const perimetroC = ladoCuadrado *4;
 
 console.log("Perimetro " + perimetroC + "cm");
@@ -60,3 +64,19 @@ console.log("El perimetro del circulo es " + perimetroCirc + " cm");
 console.log("El area del circulo es "+ areaCirc + " cm2");
 
 console.groupEnd();
+
+//aqui comienza con la interacción con HTML
+
+function calculaP() {
+  const input = document.getElementById("inputCua");
+  const value = input.value;
+  const pere = perimetroCuadrado(value);
+  alert(pere);
+}
+
+function calculaR() {
+  const input = document.getElementById("inputCua");
+  const value = input.value;
+  alert(perimetroCuadrado(value));
+  console.log(perimetroCuadrado(value));
+}
