@@ -83,8 +83,10 @@ function calculaR() {
 
 console.log("xs");
 function calcularIso(lado1,lado2,base) {
-  if (lado1 == lado2 && lado1 <> base) {
-    console.log("Es un triangulo Isosceles");
+  if (lado1 == lado2 && lado1 != base) {
+    console.log("Es un triangulo Isosceles, calculando altura");
+    const altura = Math.sqrt(((lado1 * lado2)-((base*base)/4)));
+    console.log("El resultado es " + altura);
   } else {
     console.log("No es un triangulo Isosceles");
   }
