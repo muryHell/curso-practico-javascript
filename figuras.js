@@ -80,3 +80,12 @@ function calculaR() {
   alert(perimetroCuadrado(value));
   console.log(perimetroCuadrado(value));
 }
+
+console.log("xs");
+function calcularIso(lado1,lado2,base) {
+  if (lado1 == lado2 && lado1 <> base) {
+    console.log("Es un triangulo Isosceles");
+  } else {
+    console.log("No es un triangulo Isosceles");
+  }
+}//end calcularIso
