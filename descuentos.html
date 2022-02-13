@@ -5,7 +5,20 @@
     <title>Descuentos XD</title>
   </head>
   <body>
-    <h1 align="center">Descuentos de uwu</h1>
+    <header>
+      <h1 align="center">Descuentos de uwu</h1>
+    </header>
+    <section>
+      <h2>Calcula el precio con descuento</h2>
+      <form>
+        <label for="inputPrecio">Escribe el Precio</label>
+        <input type="number" id="inputPrecio">
+        <label for="inputDescuento">Escribe el descuento</label>
+        <input type="number" id="inputDescuento">
+        <button type="button" name="button" onclick="priceDiscount()">Calcular Precio</button>
+        <p id="resultP"></p>
+      </form>
+    </section>
   </body>
   <script src="./descuentos.js"></script>
 </html>
